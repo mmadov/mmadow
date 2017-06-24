@@ -1,0 +1,62 @@
+<div class="bg-main bottom" style="height: 130px;">
+  <div class="text-center" style="padding: 38px;">
+<h3 style="margin: 0;color: #fff;">
+  Testtatataa asfasf
+</h3>
+<p>tete tetet ete tete tet</p>
+</div>
+</div>
+    <div class="container" style="margin-top:20px;">
+    <div class="row">
+    <div class="col-md-5">
+       <h2><%= @template.name %></h2>
+    <img src="<%= @template.image %>" width="100%"> 
+   
+    <li id="main_sample" style="text-align: center;
+padding: 10px;
+display: inherit;
+font-size: 15px;"> <a href="<%= template_path(@template.id) %>" > Numune bax </a> </li>
+    </div>
+    <div class="col-md-7">
+     <div class="containers">
+
+
+
+
+
+
+<%= form_for(@shop) do |f| %>
+ <div class="field">
+    <%= f.label :Adiniz %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Soyadiniz %>
+    <%= f.text_field :lname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Telefon %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Sirket %>
+    <%= f.text_field :company %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Email %>
+    <%= f.text_field :email %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+           </div>
+    </div>
+    </div>
+    </div>

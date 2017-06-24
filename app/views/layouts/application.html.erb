@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://bootstrap-3.ru/assets/ico/favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://bootstrap-3.ru/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400|Source+Sans+Pro:200,300,400,600">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+     body {
+      font-family: 'Lato', serif;
+      font-size: 20px;
+     }
+  
+</style>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="http://bootstrap-3.ru/examples/carousel/carousel.css" rel="stylesheet">
+<link href="../node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+    <%= csrf_meta_tags %>
+<%= javascript_include_tag :defaults, "nested_form" %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+
+  <body style="margin:0;padding:0">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="/"><img src="/uploads/logo.png" style="height: 23px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="   background: #61B1FF;">
+      <ul class="nav navbar-nav">
+        <li><a href="/categories">Numuneler</a></li>
+        <li><a href="/about">Haqqimizda</a></li>
+      </ul>
+      <% if(@text === true) %>
+      <ul class="nav navbar-nav navbar-right">
+        <li style="background: #009cff99;
+color: #fff;
+padding: 0px 20px 0 20px;"><a style="color:#fff" href="#">Buy</a></li>
+      </ul>
+      <% else %>
+      <% end %>
+     
+    </div><!-- /.navbar-collapse -->
+    <%= yield %>
+</body>
+      <!-- FOOTER -->
+      <footer style="padding: 10px;background: #1a1a1a">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://bootstrap-3.ru/dist/js/bootstrap.min.js"></script>
+    <script src="http://bootstrap-3.ru/assets/js/docs.min.js"></script>
+  </body>
+</html>
+
+
+
+

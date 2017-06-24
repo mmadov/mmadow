@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+<ul class="nav nav-pills  nav-stacked">
+  <li><a href="/categories">Hamisis</a></li>
+  <li><a href="/categories/1">Korporativ</a></li>
+  <li><a href="/categories/2">Hekim</a></li>
+</ul>
+    </div>
+    <div class="col-md-9">
+      <% @templates.each do |temp| %>
+  <div class="col-xs-6 col-md-4" style="display: grid;
+padding: 7px;">
+    <a href="#" class="thumbnail">
+      <img src="<%= temp.image %>" alt="...">
+    </a>
+      <li class="main_temp">
+        <%= temp.name %>
+      </li>
+      <li class="main_temp" id="main_sample">
+        <a href="<%= template_path(temp.id) %>" > Numune bax </a>
+      </li>
+  </div>
+  <% end %>
+    </div>
+  </div></div>
